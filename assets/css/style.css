@@ -1,10 +1,11 @@
 ---
 ---
 
-@import 'jekyll-theme-cayman-red';
-
 .page-header {
     color: #000
     text-align: center;
     background-color: #fff;
 }
+
+@import 'jekyll-theme-cayman-red';
+
