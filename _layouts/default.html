@@ -16,9 +16,9 @@
       <h2 class="project-tagline">Training Guides</h2>
       {% for item in site.data.pages.pages %}
         {% if page.url == item.url %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}" class="btn"><font color="white">{{ item.title }}</font></a>
+        <a href="{{ '/' | absolute_url }}{{ item.url }}"><font color="white">{{ item.title }}</font></a>
         {% else %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}" class="btn">{{ item.title }}</a>
+        <a href="{{ '/' | absolute_url }}{{ item.url }}">{{ item.title }}</a>
         {% endif %}
       {% endfor %}
      <br>  
