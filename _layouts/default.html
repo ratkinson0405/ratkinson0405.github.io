@@ -14,7 +14,7 @@
       <a class="site-title" href="http://pawsey.org.au"><img width="200" src="{{ '/' | absolute_url }}/logo.png"></a>
       <h1 class="project-name">Pawsey Supercomputing Centre</h1>
       <h2 class="project-tagline">Training Guides</h2>
-      {% for item in site.data.pages.pages %}
+      {% for item in site.data.pages.links %}
         {% if page.url == item.url %}
         <a href="{{ '/' | absolute_url }}{{ item.url }}"><font color=white>{{ item.title }}</font></a>
         {% else %}
