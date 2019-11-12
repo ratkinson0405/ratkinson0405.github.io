@@ -25,30 +25,7 @@
     </section>
 
     <section class="main-content">
-      {% i = 1 %}
-      {% for item in site.data.pages.pages %}
-        {% if i == 1 %}
-        <div class="row">
-        {% endif %}
-      
-        <div class="column">
-        {% if page.url == item.url %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}"><font color="white">{{ item.title }}</font></a>
-        {% else %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}">{{ item.title }}</a>
-        {% endif %}
-        </div>
-          
-        {% if i == 2 %}
-        </div>
-        {% i = 1 %}
-        {% else %}
-        {% i = i + 1 %}
-        {% endif %}
-          
-      {% endfor %}
-      
-      
+
       {{ content }}
 
       <footer class="site-footer">
