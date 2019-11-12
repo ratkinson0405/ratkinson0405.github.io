@@ -22,11 +22,7 @@
     <div class="container">
 
       {% for item in site.data.links.links %}
-        {% if link.url == item.url %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}"><font color=white>{{ item.title }}</font></a>
-        {% else %}
         <a href="{{ '/' | absolute_url }}{{ item.url }}">{{ item.title }}</a>
-        {% endif %}
       {% endfor %}
       <br>
       <br>
