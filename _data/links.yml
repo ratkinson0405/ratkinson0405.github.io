@@ -1,10 +1,10 @@
 links:
 - title: Containers in HPC
   url: https://pawseysc.github.io/sc19-containers 
-  description: This course is about containers in the HPC environment
+  description: Learn what are containers and how they are beneficial to HPC & Cloud computing.
 - title: Container Workflows 
   url: https://pawseysc.github.io/container-workflows
-  description: description 2
+  description: Docker is a tool that allows you to easily create, deploy, and run applications on any architecture. It does this via something called containers, which is a way for you to package up an application and all of its dependecies, into a single object that’s easy to track, manage, share, and deploy.
 - title: Introduction to Docker 
   url: https://pawseysc.github.io/docker-resbaz19 
   description: description 3
