@@ -34,9 +34,9 @@
       
         <div class="column">
         {% if page.url == item.url %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}" class="btn"><font color="white">{{ item.title }}</font></a>
+        <a href="{{ '/' | absolute_url }}{{ item.url }}"><font color="white">{{ item.title }}</font></a>
         {% else %}
-        <a href="{{ '/' | absolute_url }}{{ item.url }}" class="btn">{{ item.title }}</a>
+        <a href="{{ '/' | absolute_url }}{{ item.url }}">{{ item.title }}</a>
         {% endif %}
         </div>
           
@@ -50,7 +50,7 @@
       {% endfor %}
       
       
-      
+      {{ content }}
 
       <footer class="site-footer">
         <span class="site-footer-credits">The <a href="https://pawsey.org.au">Pawsey Supercomputing Centre</a> is supported by $90 million funding as part of the Australian Government's measures to support national research infrastructure under the National Collaborative Research Infrastructure Strategy and related programs through the Department of Education.</span><br/>
