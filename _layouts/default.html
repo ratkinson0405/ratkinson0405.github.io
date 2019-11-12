@@ -12,53 +12,33 @@
   <body>
     <section class="page-header">
       <a class="site-title" href="http://pawsey.org.au"><img width="200" src="{{ '/' | absolute_url }}/logo.png"></a>
-      <h1 class="project-name">Pawsey Supercomputing Centre</h1>
-      <h2 class="project-tagline">Training Guides</h2>
+      <h1 class="project-name">Training Guides</h1>
      <br>  
     </section>
 
     <section class="main-content">
-
-    <div class="container">
-
-<table>
-<colgroup>
-<col width="30%" />
-<col width="70%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Training Guide</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-  {% for item in site.data.links.links %}
-    <tr>
-    <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-    <td markdown="span">{{ item.description }}</td>
-    </tr>    
-  {% endfor %}
-</tbody>
-</table>
-  <br>
-  <br>
-      
-      {% assign rows = content | split:"@row" %}
-      {% for row in rows %}
-        <div class="row" id="row-{{ forloop.index }}">
-
-          {% assign columns = row | split:"@column" %}
-          {% for column in columns %}
-            <div class="col-sm-{{ 12 | divided_by:forloop.length }}">
-              {{ column }}
-            </div>
-          {% endfor %}
-
-        </div>
-      {% endfor %}
-
-    </div>
+      <div class="container">
+        <table>
+          <colgroup>
+          <col width="30%" />
+          <col width="70%" />
+          </colgroup>
+          <thead>
+            <tr class="header">
+            <th>Training Guide</th>
+            <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in site.data.links.links %}
+            <tr>
+            <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+            <td markdown="span">{{ item.description }}</td>
+            </tr>    
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
 
       <footer class="site-footer">
         <span class="site-footer-credits">The <a href="https://pawsey.org.au">Pawsey Supercomputing Centre</a> is supported by $90 million funding as part of the Australian Government's measures to support national research infrastructure under the National Collaborative Research Infrastructure Strategy and related programs through the Department of Education.</span><br/>
