@@ -21,12 +21,28 @@
 
     <div class="container">
 
-      | ------ | ------ |
-      {% for item in site.data.links.links %}
-        | <a href="{{ '/' | absolute_url }}{{ item.url }}">{{ item.title }}</a> | {{ item.description }} |
-      {% endfor %}
-      <br>
-      <br>
+<table>
+<colgroup>
+<col width="30%" />
+<col width="70%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+  {% for item in site.data.links.links %}
+    <tr>
+    <td markdown="span"><a href="{{ '/' | absolute_url }}{{ item.url }}">{{ item.title }}</a></td>
+    <td markdown="span">{{ item.description }}</td>
+    </tr>    
+  {% endfor %}
+</tbody>
+</table>
+  <br>
+  <br>
       
       {% assign rows = content | split:"@row" %}
       {% for row in rows %}
