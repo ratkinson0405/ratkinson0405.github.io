@@ -126,13 +126,14 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  font-weight: 300;
 
   @include large {
-    font-size: 3.25rem;
+    font-size: 2.25rem;
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 2.00rem;
   }
 
   @include small {
