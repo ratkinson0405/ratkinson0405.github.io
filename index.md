@@ -14,8 +14,9 @@ Second row, second column
 
 
 
-| Priority apples | Second priority | Third priority |
+| Priority apples | Second priority |
 |-------|--------|---------|
-| ambrosia | gala | red delicious |
-| pink lady | jazz | macintosh |
-| honeycrisp | granny smith | fuji |
+| Containers in HPC | <a href="https://pawseysc.github.io/sc19-containers">Containers in HPC</a> |
+| Container Workflows | <a href="https://pawseysc.github.io/container-workflows">Container Workflows</a> |
+| Introduction to Docker | <a href="https://pawseysc.github.io/docker-resbaz19">Introduction to Docker</a> |
+
