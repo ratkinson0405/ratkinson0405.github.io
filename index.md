@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+@column
 First row, first column
 @column
 First row, second column
