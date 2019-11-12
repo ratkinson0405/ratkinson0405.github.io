@@ -17,3 +17,6 @@ links:
 - title: Container Workflows
   url: https://pawseysc.github.io/container-workflows
   description: Pawsey Training: containers in HPC and Cloud
+- title: shell-hpc
+  url: https://pawseysc.github.io/shell-hpc
+  description: Pawsey training: the Linux shell for HPC
