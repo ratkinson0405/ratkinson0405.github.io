@@ -1,7 +1,10 @@
 links:
-- title: Containers in HPC test
+- title: Containers in HPC
   url: https://pawseysc.github.io/sc19-containers 
+  decription: This course is about containers in the HPC environment
 - title: Container Workflows 
   url: https://pawseysc.github.io/container-workflows
+  description: description 2
 - title: Introduction to Docker 
   url: https://pawseysc.github.io/docker-resbaz19 
+  description: description 3
