@@ -38,12 +38,7 @@
           </thead>
           <tbody>
             {% for item in site.data.links.links %}
-            {% if page.pageid == item.pageid %}
-            <tr>
-              <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-              <td markdown="span">{{ item.description }}</td>
-            </tr>    
-            {% else %}
+            {% if page.pageid != item.pageid %}
             <tr>
               <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
               <td markdown="span">{{ item.description }}</td>
