@@ -73,7 +73,7 @@ a {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    #color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     background-color: rgba(241, 90, 41, 0.2);
     border-color: rgba(9, 67, 88, 0.3);
