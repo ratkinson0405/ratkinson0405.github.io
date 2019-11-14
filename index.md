@@ -1,5 +1,5 @@
 <div>
-      {{ item.pageid }}
+      {{ item.name }}
   <table>
     <colgroup>
       <col width="30%" />
