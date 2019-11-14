@@ -1,5 +1,4 @@
 <div>
-  <a href="/">link</a>
         <table>
           <colgroup>
             <col width="30%" />
