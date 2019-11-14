@@ -1,9 +1,13 @@
 pages:
 - title: Pawsey User Training 
   url: /training.html
+  pageid: training
 - title: Workshops to Accelerate Your Code
   url: /code.html
+  pageid: code
 - title: Workshops on Containers
   url: /containers.html
+  pageid: containers
 - title: Other workshops and webinars
   url: /webinars.html
+  pageid: webinars
