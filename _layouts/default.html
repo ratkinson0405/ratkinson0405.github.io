@@ -43,6 +43,11 @@
               <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
               <td markdown="span">{{ item.description }}</td>
             </tr>    
+            {% else %}
+            <tr>
+              <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+              <td markdown="span">{{ item.description }}</td>
+            </tr>    
             {% endif %}
             {% endfor %}
           </tbody>
