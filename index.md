@@ -13,7 +13,7 @@
     </thead>
     <tbody>
       {% for item in site.data.links.links %}
-      {% if page.name == 'training_md' %}
+      {% if page.name == 'index_md' %}
       <tr>
         <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
         <td markdown="span">{{ item.description }}</td>
