@@ -42,7 +42,7 @@
             {% if page.name != item.pageid %}
             <tr>
               <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-              <td markdown="span">{{ item.description }}</td>
+              <td markdown="span">{{ item.description }} {{ item.pageid }}</td>
             </tr>    
             {% endif %}
             {% endfor %}
