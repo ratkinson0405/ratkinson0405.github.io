@@ -1,7 +1,9 @@
 pages:
-- title: Supercomputing 
-  url: 
-- title: Data
-  url: 
-- title: Cloud 
-  url: 
+- title: Pawsey User Training 
+  url: /training.html
+- title: Workshops to Accelerate Your Code
+  url: /code.html
+- title: Workshops on Containers
+  url: /containers.html
+- title: Other workshops and webinars
+  url: /webinars.html
