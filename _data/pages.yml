@@ -1,4 +1,6 @@
 pages:
+- title: index
+  url: /index.html
 - title: Pawsey User Training 
   url: /training.html
 - title: Workshops to Accelerate Your Code
