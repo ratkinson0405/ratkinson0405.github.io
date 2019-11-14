@@ -1,7 +1,5 @@
 <div>
   <a href="/">link</a>
-</div>
-
         <table>
           <colgroup>
             <col width="30%" />
@@ -24,3 +22,4 @@
             {% endfor %}
           </tbody>
         </table>
+</div>
