@@ -24,9 +24,6 @@
     </section>
 
     <section class="main-content">
-      
-      {{ content }}
-      
       <div>
         <table>
           <colgroup>
@@ -41,6 +38,9 @@
           </thead>
           <tbody>
             {% for item in site.data.links.links %}
+            {% if page.name == 'index.md' %}
+              {% page.name = 'training' %}
+            {% endif %}
             {% if page.name == item.pageid %}
             <tr>
               <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
