@@ -12,6 +12,7 @@
     </thead>
     <tbody>
       {% for item in site.data.links.links %}
+      {{ item.pageid }}
       {% if item.pageid == 'training_md' %}
       <tr>
         <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
