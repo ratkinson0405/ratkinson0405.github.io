@@ -27,12 +27,18 @@
       <div>
         <table>
           <colgroup>
-            <col width="30%" />
-            <col width="70%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="60%" />
           </colgroup>
           <thead>
           <tr class="header">
-            <th>Training Guide</th>
+            <th>Name</th>
+            <th>Home</th>
+            <th>PPT</th>
+            <th>git</th>
             <th>Description</th>
           </tr>
           </thead>
@@ -42,6 +48,9 @@
                 {% if item.pageid == 'training.md' %}
                   <tr>
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td markdown="span">{{ item.description }}</td>
                   </tr>    
                 {% endif %}
@@ -51,6 +60,9 @@
                 {% if item.pageid == page.name %}
                   <tr>
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td markdown="span">{{ item.description }}</td>
                   </tr>    
                 {% endif %}
