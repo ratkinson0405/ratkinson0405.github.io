@@ -24,7 +24,9 @@
     </section>
 
     <section class="main-content">
-      {{ page.name }}
+      {% if page.name == '' %}
+         {% page.name %}
+      {% endif %}
       {{ content }}
 
       <footer class="site-footer">
