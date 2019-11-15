@@ -37,6 +37,7 @@
           </tr>
           </thead>
           <tbody>
+            {{ page.name }}
             {% if page.name == 'index.md' %}
               {% page.name = 'training.md' %}
             {% endif %}
