@@ -13,7 +13,7 @@
     </thead>
     <tbody>
       {% if page.name == 'index.md' %}
-        {% page.name = "training.md" %}
+        {% page.name = training.md %}
       {% endif %}
       
       {% for item in site.data.links.links %}
