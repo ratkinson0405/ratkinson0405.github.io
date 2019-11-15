@@ -24,9 +24,6 @@
     </section>
 
     <section class="main-content">
-      {% if page.name == 'index.md' %}
-        {{ content }}
-      {% else %}
       <div>
         <table>
           <colgroup>
@@ -41,12 +38,19 @@
           </thead>
           <tbody>
             {% for item in site.data.links.links %}
-            {% if page.name == item.pageid %}
-            <tr>
-              <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-              <td markdown="span">{{ item.description }}</td>
-            </tr>    
-            {% endif %}
+              {% if item.pageid == page.name %}
+              <tr>
+                <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+                <td markdown="span">{{ item.description }}</td>
+              </tr>    
+              {% else if page.name == 'index.md'%}
+                {% if item.pageid == 'training.md' %}
+                  <tr>
+                    <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+                    <td markdown="span">{{ item.description }}</td>
+                  </tr>    
+                {% endif %}
+              {% endif %}
             {% endfor %}
           </tbody>
         </table>
