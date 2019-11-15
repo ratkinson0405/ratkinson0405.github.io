@@ -111,7 +111,7 @@ a {
   background-color: $header-bg-color;
 
   @include large {
-    padding: 5rem 6rem 1rem;
+    padding: 5rem 6rem 2rem;
   }
 
   @include medium {
