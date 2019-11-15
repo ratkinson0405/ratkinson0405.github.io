@@ -25,6 +25,7 @@
 
     <section class="main-content">
       <div>
+            {{ page.name }}
         <table>
           <colgroup>
             <col width="30%" />
@@ -37,7 +38,6 @@
           </tr>
           </thead>
           <tbody>
-            {{ page.name }}
             {% if page.name == 'index.md' %}
               {% page.name = 'training.md' %}
             {% endif %}
