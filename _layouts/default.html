@@ -44,6 +44,7 @@
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
                     <td markdown="span">{{ item.description }}</td>
                   </tr>    
+                {% endif %}
               {% endfor %}
             {% else %}
               {% for item in site.data.links.links %}
@@ -52,6 +53,7 @@
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
                     <td markdown="span">{{ item.description }}</td>
                   </tr>    
+                {% endif %}
               {% endfor %}
             {% endif %}
           </tbody>
