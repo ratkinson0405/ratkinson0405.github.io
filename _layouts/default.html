@@ -49,10 +49,10 @@
                   <tr>
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
                     <td></td>
-                    {% if item.ppt != '' %}
-                      <td markdown="span"><a href="{{ item.ppt }}">Download</a></td>
-                    {% else %}
+                    {% if item.ppt == '' %}
                       <td></td>
+                    {% else %}
+                      <td markdown="span"><a href="{{ item.ppt }}">Download</a></td>
                     {% endif %}                    
                     <td></td>
                     <td markdown="span">{{ item.description }}</td>
@@ -65,10 +65,10 @@
                   <tr>
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
                     <td></td>
-                    {% if item.ppt != '' %}
-                      <td markdown="span"><a href="{{ item.ppt }}">Download</a></td>
-                    {% else %}
+                    {% if item.ppt == '' %}
                       <td></td>
+                    {% else %}
+                      <td markdown="span"><a href="{{ item.ppt }}">Download</a></td>
                     {% endif %}                    
                     <td></td>
                     <td markdown="span">{{ item.description }}</td>
