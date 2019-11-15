@@ -24,7 +24,7 @@
     </section>
 
     <section class="main-content">
-      {% if page.name == '' %}
+      {% if page.name != '' %}
          {% page.name %}
       {% endif %}
       {{ content }}
