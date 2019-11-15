@@ -52,7 +52,7 @@
                     {% if item.ppt == '' %}
                       <td></td>
                     {% else %}
-                      <td markdown="span"><a href="{{ item.ppt }}"><img width="30" src="{{ '/' | absolute_url }}assets/img/logo.png"></a></td>
+                      <td markdown="span"><a href="{{ item.ppt }}"><img width="30" src="{{ '/' | absolute_url }}assets/img/logo.png"></a>{{ item.ppt }}</td>
                     {% endif %}                    
                     <td></td>
                     <td markdown="span">{{ item.description }}</td>
