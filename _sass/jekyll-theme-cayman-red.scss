@@ -63,10 +63,10 @@ a {
 
 .btn_selected {
   color: white;
-  background-color: #318293;
+  background-color: rgba(241, 90, 41, 1.0);
 }
 
-.btn {
+.btn, .btn_selected {
   display: inline-block;
   margin-bottom: 1rem;
   color: rgba(241, 90, 41, 1.0);
@@ -80,8 +80,7 @@ a {
   &:hover {
     color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
-    #background-color: rgba(241, 90, 41, 1.0);
-    background-color: orange;
+    background-color: rgba(241, 90, 41, 1.0);
     border-color: rgba(9, 67, 88, 0.3);
   }
 
