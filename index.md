@@ -11,7 +11,6 @@
       </tr>
     </thead>
     <tbody>
-      {% if page.name == 'index.md' %}
         {% for item in site.data.links.links %}
         {% if item.pageid == 'training.md' %}
         <tr>
@@ -20,7 +19,6 @@
         </tr>    
         {% endif %}
         {% endfor %}
-      {% endif %}
     </tbody>
   </table>
 </div>
