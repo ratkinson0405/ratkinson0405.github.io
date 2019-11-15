@@ -13,15 +13,14 @@
     </thead>
     <tbody>
       {% if page.name == 'index.md' %}
-        {% page.name = training.md %}
-      {% endif %}
       
       {% for item in site.data.links.links %}
-      {% if page.name == item.pageid %}
+      {% if item.pageid = 'training.md' %}
       <tr>
         <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
         <td markdown="span">{{ item.description }}</td>
       </tr>    
+      {% endif %}
       {% endif %}
       {% endfor %}
     </tbody>
