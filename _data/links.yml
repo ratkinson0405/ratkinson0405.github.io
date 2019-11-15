@@ -8,27 +8,34 @@ links:
   url: https://github.com/PawseySC/topaz-documentation
   description: Topaz draft documentation for Early Adopters
   pageid: training.md
+  ppt:
 - title: sc19-containers
   url: https://pawseysc.github.io/sc19-containers
   description: Workshop "Containers for HPC" at SC19 Denver
   pageid: training.md
+  ppt:
 - title: Maali
   url: https://github.com/PawseySC/maali
   description: A build system by the Pawsey Supercomputing Centre
   pageid: training.md
+  ppt:
 - title: Maali Cygnet
   url:  https://github.com/PawseySC/maali-cygnet
   description: Cygnet (build) files for Pawsey Supercomputing Centre using maali
   pageid: code.md
+  ppt:
 - title: docker-resbaz19
   url: https://github.com/PawseySC/docker-resbaz19
   description: Docker tutorial for ResBaz19 in Perth
   pageid: training.md
+  ppt:
 - title: Container Workflows
   url: https://pawseysc.github.io/container-workflows
   description: Pawsey Training containers in HPC and Cloud
   pageid: code.md
+  ppt:
 - title: shell-hpc
   url: https://pawseysc.github.io/shell-hpc
   description: Pawsey training the Linux shell for HPC
   pageid: training.md
+  ppt:
