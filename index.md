@@ -1,3 +1,4 @@
+{{ page.name }}
 <div>
   <table>
     <colgroup>
