@@ -49,7 +49,7 @@
                   <tr>
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
                     <td></td>
-                    {% if item.ppt == blank %}
+                    {% if item.ppt == empty %}
                       <td></td>
                     {% else %}
                       <td markdown="span"><a href="{{ item.ppt }}"><img width="30" src="{{ '/' | absolute_url }}assets/img/logo.png"></a></td>
@@ -65,7 +65,7 @@
                   <tr>
                     <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
                     <td></td>
-                    {% if item.ppt == blank %}
+                    {% if item.ppt == empty %}
                       <td></td>
                     {% else %}
                       <td markdown="span"><a href="{{ item.ppt }}"><img width="30" src="{{ '/' | absolute_url }}assets/img/logo.png"></a></td>
