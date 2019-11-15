@@ -55,7 +55,11 @@
                     {% else %}
                       <td markdown="span" align="center"><a href="{{ item.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a></td>
                     {% endif %}                    
-                    <td></td>
+                    {% if item.git == nil %}
+                      <td></td>
+                    {% else %}
+                      <td markdown="span" align="center"><a href="{{ item.git }}"><i class="fas fa-file-github" style="font-size:24px;"></i></a></td>
+                    {% endif %}                    
                     <td markdown="span">{{ item.description }}</td>
                   </tr>    
                 {% endif %}
@@ -71,7 +75,11 @@
                     {% else %}
                       <td markdown="span" align="center"><a href="{{ item.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a></td>
                     {% endif %}                    
-                    <td></td>
+                    {% if item.git == nil %}
+                      <td></td>
+                    {% else %}
+                      <td markdown="span" align="center"><a href="{{ item.git }}"><i class="fas fa-file-github" style="font-size:24px;"></i></a></td>
+                    {% endif %}                    
                     <td markdown="span">{{ item.description }}</td>
                   </tr>    
                 {% endif %}
