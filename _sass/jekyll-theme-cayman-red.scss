@@ -167,7 +167,8 @@ a {
   }
 
   @include large {
-    max-width: 110rem;
+    #max-width: 110rem;
+    max-width: 160rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem;
