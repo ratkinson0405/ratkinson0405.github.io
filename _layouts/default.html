@@ -24,7 +24,9 @@
     </section>
 
     <section class="main-content">
-        {{ page.name }} {{ page.url }} test
+      {% if page.name == 'index.md' %}
+        {{ page.name }} test
+      {% endif %}
       <div>
         <table>
           <colgroup>
