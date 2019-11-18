@@ -20,7 +20,8 @@ tableData:
 - title: Using Nimbus
   description: 
   pageName: training.md
-  git: https://pawseysc.github.io/using-nimbus
+  url: https://pawseysc.github.io/using-nimbus
+  git: https://github.com/PawseySC/using-nimbus
 - title: Remote Visualisation
   description: 
   pageName: training.md
