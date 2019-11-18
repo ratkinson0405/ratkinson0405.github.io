@@ -26,6 +26,7 @@
 
     <section class="main-content">
       <div>
+            testing: {{ page.name }}
         <table>
           <colgroup>
             <col width="20%" />
@@ -45,7 +46,6 @@
           </thead>
           <tbody>
             {% for data in site.data.links.tableData %}
-            testing: {{ page.name }}
               {% if data.pageName == pageName %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
