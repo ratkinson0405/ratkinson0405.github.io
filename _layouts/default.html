@@ -26,7 +26,11 @@
 
     <section class="main-content">
       <div>
-            testing: {{ page.name }}
+        {% if page.name == nil %}
+          {% page.name = 'training.md' %}
+        {% else %}
+          testing: {{ page.name }}
+        {% endif %}
         <table>
           <colgroup>
             <col width="20%" />
