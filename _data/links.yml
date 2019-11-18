@@ -7,6 +7,6 @@ tableData:
 - title: Introductory Supercomputing
   description: Topaz draft documentation for Early Adopters
   pageName: training.md
-  url: https://github.com/PawseySC/topaz-documentation
+  url:
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introductory%20Supercomputing.pdf?api=v2
   git: https://github.com/PawseySupercomputing/Introductory-Supercomputing
