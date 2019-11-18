@@ -26,11 +26,11 @@
 
     <section class="main-content">
       <div>
+        {% assign mypage = "training.md" %}
         {% if page.name == "index.md" %}
-          {% assign page.name = "training.md" %}
-        {% else %}
-          testing: {{ page.name }}
+          {% assign mypage = "training.md" %}
         {% endif %}
+        {{ mypage }}
         <table>
           <colgroup>
             <col width="20%" />
@@ -50,7 +50,7 @@
           </thead>
           <tbody>
             {% for data in site.data.links.tableData %}
-              {% if data.pageName == page.name %}
+              {% if data.pageName == mypage %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home" style="font-size:24px;"></i></a>{% endif %}</td>
