@@ -45,46 +45,27 @@
           </thead>
           <tbody>
             {% if page.name == 'index.md'%}
-              {% for item in site.data.links.links %}
-                {% if item.pageid == 'training.md' %}
-                  <tr>
-                    <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-                    <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-                    {% if item.ppt == nil %}
-                      <td></td>
-                    {% else %}
-                      <td markdown="span" align="center"><a href="{{ item.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a></td>
-                    {% endif %}                    
-                    {% if item.git == nil %}
-                      <td></td>
-                    {% else %}
-                      <td markdown="span" align="center"><a href="{{ item.git }}"><i class="fab fa-github" style="font-size:24px;"></i></a></td>
-                    {% endif %}                    
-                    <td markdown="span">{{ item.description }}</td>
-                  </tr>    
-                {% endif %}
-              {% endfor %}
-            {% else %}
-              {% for item in site.data.links.links %}
-                {% if item.pageid == page.name %}
-                  <tr>
-                    <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
-                    <td></td>
-                    {% if item.ppt == nil %}
-                      <td></td>
-                    {% else %}
-                      <td markdown="span" align="center"><a href="{{ item.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a></td>
-                    {% endif %}                    
-                    {% if item.git == nil %}
-                      <td></td>
-                    {% else %}
-                      <td markdown="span" align="center"><a href="{{ item.git }}"><i class="fab fa-github" style="font-size:24px;"></i></a></td>
-                    {% endif %}                    
-                    <td markdown="span">{{ item.description }}</td>
-                  </tr>    
-                {% endif %}
-              {% endfor %}
+              {% page.name = 'training.md' %}
             {% endif %}
+            {% for item in site.data.links.links %}
+              {% if item.pageid == 'training.md' %}
+                <tr>
+                  <td markdown="span">{{ item.title }}</td>
+                  <td markdown="span"><a href="{{ item.url }}">{{ item.title }}</a></td>
+                  {% if item.ppt == nil %}
+                    <td></td>
+                  {% else %}
+                    <td markdown="span" align="center"><a href="{{ item.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a></td>
+                  {% endif %}                    
+                  {% if item.git == nil %}
+                    <td></td>
+                  {% else %}
+                    <td markdown="span" align="center"><a href="{{ item.git }}"><i class="fab fa-github" style="font-size:24px;"></i></a></td>
+                  {% endif %}                    
+                  <td markdown="span">{{ item.description }}</td>
+                </tr>    
+              {% endif %}
+            {% endfor %}
           </tbody>
         </table>
       </div>
