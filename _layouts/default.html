@@ -45,12 +45,7 @@
           </thead>
           <tbody>
             {% for data in site.data.links.tableData %}
-              {% pageName == page.name %}
-            
-              {% if pageName == 'index.md %}
-                {% pageName = 'training.md%}
-              {% endif %}
-            {{ pageName }} | {{ page.name }}
+            testing: {{ page.name }}
               {% if data.pageName == pageName %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
