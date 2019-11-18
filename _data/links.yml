@@ -66,6 +66,24 @@ tableData:
   description: Pawsey workshop containers for bioinformatics.
   pageName: containers.md
   git: https://github.com/PawseySC/bio-workshop-18
+- title: Cosmic Machines
+  description: Introductory workshop for Machine Learning in observational astronomy.
+  pageName: webinars.md
+  git: https://github.com/PawseySC/cosmic-machines
+- title: Using Python in HPC
+  description: Pawsey Webinar on Python for HPC.
+  pageName: webinars.md
+  git: https://github.com/PawseySC/Using-Python-in-HPC
+- title: Data Intensive Workflows
+  description: Workshop on data-intensive workflows at Data Science Week 2019.
+  pageName: webinars.md
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Data%20Intensive%20Workflows%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/data-intensive-workflows
+- title: Overview of Containers in HPC
+  description: Pawsey Webinar on containers for HPC.
+  pageName: webinars.md
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Overview%20of%20Containers%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/Overview-of-Containers-in-HPC
 
 
 
