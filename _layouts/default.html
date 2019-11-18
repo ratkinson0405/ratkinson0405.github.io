@@ -17,9 +17,11 @@
       <h2 class="project-tagline">Course & Training Material</h2>
       {% for item in site.data.pages.pages %}
         {% if page.url == item.url %}
-        <a href="{{ absolute_url }}{{ item.url }}" class="btn"><font color="#f15a29">{{ item.title }}</font></a>
+          <a href="{{ absolute_url }}{{ item.url }}" class="btn"><font color="#f15a29">{{ item.title }}</font></a>
+        {% elseif page.name == "index.md" %}
+          <a href="{{ absolute_url }}{{ item.url }}" class="btn"><font color="#f15a29">{{ item.title }}</font></a>
         {% else %}
-        <a href="{{ absolute_url }}{{ item.url }}" class="btn">{{ item.title }}</a>
+          <a href="{{ absolute_url }}{{ item.url }}" class="btn">{{ item.title }}</a>
         {% endif %}
       {% endfor %}
     </section>
