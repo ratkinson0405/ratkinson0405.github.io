@@ -45,7 +45,7 @@
           </thead>
           <tbody>
             {% for data in site.data.links.tableData %}
-              {% if data.pageName == 'training.md' %}
+              {% if data.pageName == page.name %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span"><a href="{{ data.url }}">{{ data.title }}</a></td>
