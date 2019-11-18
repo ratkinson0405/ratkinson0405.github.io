@@ -45,7 +45,8 @@
           </thead>
           <tbody>
             {% for data in site.data.links.tableData %}
-              {% if data.pageName == page.name %}
+              {% pageName == page.name %}
+              {% if data.pageName == pageName %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span" align="center"><a href="{{ data.url }}"><i class="fas fa-home" style="font-size:24px;"></i></a>{% endif %}</td>
