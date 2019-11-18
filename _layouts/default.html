@@ -27,7 +27,7 @@
     <section class="main-content">
       <div>
         {% if page.name == 'index.md' %}
-          {% page.name = 'training.md' %}
+          {% assign page.name = "training.md" %}
         {% else %}
           testing: {{ page.name }}
         {% endif %}
