@@ -1,6 +1,6 @@
 tableData:
 - title: Introduction to Pawsey
-  description: intro
+  description: Advancing science through supercomputing.
   pageName: training.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
 - title: Introductory Supercomputing
@@ -14,7 +14,7 @@ tableData:
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Intermediate%20Supercomputing.pdf?api=v2
   git: https://github.com/PawseySupercomputing/Intermediate-Supercomputing
 - title: Shell for HPC
-  description: Pawsey version of the Introduction to Unix SW Carpentry material
+  description: Pawsey version of the Introduction to Unix SW Carpentry material.
   pageName: training.md
   url: https://pawseysc.github.io/shell-hpc
   git: https://github.com/PawseySupercomputing/shell-hpc
@@ -24,6 +24,6 @@ tableData:
   url: https://pawseysc.github.io/using-nimbus
   git: https://github.com/PawseySC/using-nimbus
 - title: Remote Visualisation
-  description: Introduction to remote visualisation facilities at Pawsey
+  description: Introduction to remote visualisation facilities at Pawsey.
   pageName: training.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Remote%20Visualisation.pdf?api=v2
