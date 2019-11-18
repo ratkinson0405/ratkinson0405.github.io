@@ -16,6 +16,7 @@ tableData:
 - title: Shell for HPC
   description: Pawsey version of the Introduction to Unix SW Carpentry material
   pageName: training.md
+  url: https://pawseysc.github.io/shell-hpc
   git: https://github.com/PawseySupercomputing/shell-hpc
 - title: Using Nimbus
   description: 
