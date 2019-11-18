@@ -48,7 +48,7 @@
               {% if data.pageName == page.name %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
-                  {% if data.ppt == nil %}
+                  {% if data.url == nil %}
                     <td></td>
                   {% else %}
                     <td markdown="span" align="center"><a href="{{ data.url }}"><i class="fas fa-home" style="font-size:24px;"></i></a></td>
