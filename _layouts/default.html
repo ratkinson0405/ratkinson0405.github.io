@@ -26,8 +26,8 @@
 
     <section class="main-content">
       <div>
-        {% assign mypage = "training.md" %}
-        {% if page.name == "index.md" %}
+        {% assign mypage = page.name %}
+        {% if mypage == "index.md" %}
           {% assign mypage = "training.md" %}
         {% endif %}
         {{ mypage }}
