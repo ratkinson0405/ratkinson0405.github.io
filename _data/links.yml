@@ -1,13 +1,4 @@
 tableData:
-- title: User Support Documentation
-  type: external
-  url: https://support.pawsey.org.au/documentation
-- title: Training Material
-  type: external
-  url: https://support.pawsey.org.au/documentation/display/US/Training+Material
-- title: Pawsey GitHub
-  type: external
-  url: https://github.com/pawseysc
 - title: Introduction to Pawsey
   description: Advancing science through supercomputing.
   pageName: training.md
@@ -61,6 +52,11 @@ tableData:
   pageName: code.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
   git: https://github.com/PawseySC/Optimising-Serial-Code
+- title: Containers @SC19
+  description: Learn what are containers and how they are beneficial to HPC & Cloud computing.
+  pageName: containers.md
+  url: https://pawseysc.github.io/sc19-containers
+  git: https://github.com/pawseysc/sc19-containers
 - title: Container Workflows
   description: Tutorial on Docker containers in HPC and Cloud.
   pageName: containers.md
