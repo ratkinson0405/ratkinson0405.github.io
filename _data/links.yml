@@ -72,7 +72,7 @@ tableData:
   url: https://pawseysc.github.io/docker-resbaz19/
   git: https://github.com/PawseySC/docker-resbaz19
 - title: Bio Workshop 18
-  description: Pawsey workshop containers for bioinformatics.
+  description: Pawsey workshop on containers for bioinformatics.
   pageName: containers.md
   git: https://github.com/PawseySC/bio-workshop-18
 - title: Cosmic Machines
