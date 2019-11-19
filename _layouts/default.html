@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
+    <section style="text-align: right;">
+      {% for externalLink in site.data.externalLinks.links %}
+        <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
+      {% endfor %}
+    </section>
     <section class="page-header">
       <a class="site-title" href="http://pawsey.org.au"><img width="200" src="{{ '/' | absolute_url }}assets/img/logo.png"></a>
       <h1 class="project-name">EDUCATION & OUTREACH</h1>
