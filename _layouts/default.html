@@ -27,7 +27,7 @@
     <section class="main-content">
       <div>
         {% for externalLink in site.data.externalLinks.links %}
-          <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a><br>
+          <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
         {% endfor %}
 
         {% assign pageName = page.name %}
