@@ -22,14 +22,14 @@
           <a href="{{ item.url }}" class="btn">{{ item.title }}</a>
         {% endif %}
       {% endfor %}
-
-      {% for externalLink in site.data.externalLinks.links %}
-        <a href="{{ externalLink.url }}">{{ externalLink.title }}</a>
-      {% endfor %}
     </section>
 
     <section class="main-content">
       <div>
+        {% for externalLink in site.data.externalLinks.links %}
+          <a href="{{ externalLink.url }}">{{ externalLink.title }}</a>
+        {% endfor %}
+
         {% assign pageName = page.name %}
         {% if pageName == "index.md" %}
           {% assign pageName = "training.md" %}
