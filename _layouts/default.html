@@ -27,10 +27,6 @@
           <a href="{{ item.url }}" class="btn">{{ item.title }}</a>
         {% endif %}
       {% endfor %}
-      <br>
-      {% for externalLink in site.data.externalLinks.links %}
-        <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
-      {% endfor %}
     </section>
 
     <section class="main-content">
