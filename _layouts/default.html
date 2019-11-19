@@ -12,11 +12,11 @@
   </head>
   <body>
     <section class="page-header">
-      <section style="text-align: right;">
+      <div style="text-align: right;">
         {% for externalLink in site.data.externalLinks.links %}
           <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
         {% endfor %}
-      </section>
+      </div>
       <a class="site-title" href="http://pawsey.org.au"><img width="200" src="{{ '/' | absolute_url }}assets/img/logo.png"></a>
       <h1 class="project-name">EDUCATION & OUTREACH</h1>
       <h2 class="project-tagline">Course & Training Material</h2>
