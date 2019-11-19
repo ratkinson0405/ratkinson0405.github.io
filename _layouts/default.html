@@ -25,10 +25,11 @@
     </section>
 
     <section class="main-content">
+      <div>
       {% for externalLink in site.data.externalLinks.links %}
         <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
       {% endfor %}
-
+      </div>
       <div>
         {% assign pageName = page.name %}
         {% if pageName == "index.md" %}
