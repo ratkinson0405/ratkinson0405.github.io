@@ -1,4 +1,13 @@
 tableData:
+- title: User Support Documentation
+  type: external
+  url: https://support.pawsey.org.au/documentation
+- title: Training Material
+  type: external
+  url: https://support.pawsey.org.au/documentation/display/US/Training+Material
+- title: Pawsey GitHub
+  type: external
+  url: https://github.com/pawseysc
 - title: Introduction to Pawsey
   description: Advancing science through supercomputing.
   pageName: training.md
