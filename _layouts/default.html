@@ -14,7 +14,7 @@
     <section class="page-header">
       <div style="text-align: right;">
         {% for externalLink in site.data.externalLinks.links %}
-          <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
+          <div><a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a></div>
         {% endfor %}
       </div>
       <a class="site-title" href="http://pawsey.org.au"><img width="200" src="{{ '/' | absolute_url }}assets/img/logo.png"></a>
