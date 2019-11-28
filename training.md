@@ -1,3 +1,3 @@
 ---
-redirect_from: "/index.html/"
+redirect_from: "/"
 ---
