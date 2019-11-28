@@ -14,6 +14,7 @@
     <section class="page-header">
       <a class="site-title" href="http://pawsey.org.au"><img width="200" src="{{ '/' | absolute_url }}assets/img/logo.png"></a>
       <h2 class="project-tagline">Course & Training Material</h2>
+      Page Name: {{ page.name }}
       {% for item in site.data.pages.pages %}
         {% if page.url == item.url or page.name == 'index.md' %}
           <a href="{{ item.url }}" class="btn" style="background-color: #f15a29;"><font color="white">{{ item.title }}</font></a>
