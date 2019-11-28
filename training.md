@@ -1,3 +1,3 @@
 ---
-redirect_from: "/index.md/"
+redirect_from: "/"
 ---
