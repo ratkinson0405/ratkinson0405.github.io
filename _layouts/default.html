@@ -67,8 +67,10 @@
             <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
           {% endfor %}
         </div>
-        <div class="external-links-icons">
-          
+        <div class="external-links-icons" style="width: 100%; background-color: #2b2b2b">
+          {% for externalLinkIcon in site.data.externalLinks.linkIcons %}
+            <a href="{{ externalLinkIcon.url }}" target="_blank" rel="noopener noreferrer" style="padding: 10px;"><img src="{{ externalLink.image }}" alt=""></a>
+          {% endfor %}
         </div>
       </footer>
     </section>
