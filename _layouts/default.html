@@ -70,7 +70,7 @@
         </div>
         <div class="external-links-icons">
           {% for externalLinkIcon in site.data.externalLinks.linkIcons %}
-            <a href="http://pawsey.org.au" target="_blank" rel="noopener noreferrer" style="padding: 20px;"><img src="{{ externalLinkIcon.image }}" alt=""></a>
+            <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer" style="padding: 20px;"><img src="{{ externalLinkIcon.image }}" alt=""></a>
           {% endfor %}
         </div>
       </footer>
