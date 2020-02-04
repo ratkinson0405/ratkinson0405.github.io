@@ -6,5 +6,5 @@ links:
 - title: Pawsey GitHub
   url: https://github.com/pawseysc
 linkIcons:
-- image: {{ '/' | absolute_url }}assets/img/logo.png
-- image: {{ '/' | absolute_url }}assets/img/logo.png
+- image: /assets/img/logo.png
+- image: /assets/img/logo.png
