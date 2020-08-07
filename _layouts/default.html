@@ -33,6 +33,7 @@
             <col width="5%" />
             <col width="5%" />
             <col width="5%" />
+            <col width="5%" />
             <col width="65%" />
           </colgroup>
           <thead>
@@ -40,6 +41,7 @@
             <th>Name</th>
             <th>Home</th>
             <th>Slides</th>
+            <th>Video</th>
             <th>GitHub</th>
             <th>Description</th>
           </tr>
@@ -51,6 +53,7 @@
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home" style="font-size:24px;"></i></a>{% endif %}</td>
                   <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-youtube" style="font-size:24px;"></i></a>{% endif %}</td>
                   <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github" style="font-size:24px;"></i></a>{% endif %}</td>
                   <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
                 </tr>    
