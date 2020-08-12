@@ -4,6 +4,14 @@ tableData:
   pageName: training.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
   vid: https://www.youtube.com/watch?v=j2JFCsvsH1g&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=2&t=3s
+- title: Using Supercomputers – Part 1
+  description:
+  pageName: training.md
+  vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3&t=29s
+- title: Using Supercomputers – Part 2
+  description:
+  pageName: training.md
+  vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
 - title: Introductory Supercomputing
   description: An introductory supercomputing course developed by the Pawsey Supercomputing Centre.
   pageName: training.md
@@ -19,15 +27,17 @@ tableData:
   pageName: training.md
   url: https://pawseysc.github.io/shell-hpc
   git: https://github.com/PawseySC/shell-hpc
-- title: Using Nimbus
+- title: Using the Nimbus Research Cloud Series
   description: This course will introduce you to the use of Nimbus, the research cloud at Pawsey Supercomputing Centre.
   pageName: training.md
   url: https://pawseysc.github.io/using-nimbus
+  vid: https://www.youtube.com/watch?v=5yItRsdleE4&list=PLmu61dgAX-aYar4Fpust_u3mpDt07T2jl
   git: https://github.com/PawseySC/using-nimbus
-- title: Remote Visualisation
+- title: Introducing Remote Visualisation
   description: Introduction to remote visualisation facilities at Pawsey.
   pageName: training.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Remote%20Visualisation.pdf?api=v2
+  vid: https://www.youtube.com/watch?v=aZgyjpsglSU&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=4
 - title: Develop with MPI
   description: Introduction to programming with MPI.
   pageName: code.md
