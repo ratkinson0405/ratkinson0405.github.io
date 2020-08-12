@@ -5,11 +5,11 @@ tableData:
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
   vid: https://www.youtube.com/watch?v=j2JFCsvsH1g&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=2&t=3s
 - title: Using Supercomputers – Part 1
-  description:
+  description: Part 1 - Beginners training outlining the major characteristics of a supercomputer, logging in, submitting a job and key other concepts.
   pageName: training.md
   vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3&t=29s
 - title: Using Supercomputers – Part 2
-  description:
+  description: Part 1 - Beginners training outlining use of High Performance Storage, running jobs, real world HPC use and getting help.
   pageName: training.md
   vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
 - title: Introductory Supercomputing
