@@ -9,7 +9,7 @@ tableData:
   pageName: training.md
   vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3&t=29s
 - title: Using Supercomputers – Part 2
-  description: Part 1 - Beginners training outlining use of High Performance Storage, running jobs, real world HPC use and getting help.
+  description: Part 2 - Beginners training outlining use of High Performance Storage, running jobs, real world HPC use and getting help.
   pageName: training.md
   vid: https://www.youtube.com/watch?v=l-S_dzCHcKk&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
 - title: Introductory Supercomputing
