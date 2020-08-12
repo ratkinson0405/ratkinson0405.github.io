@@ -63,6 +63,18 @@ tableData:
   pageName: code.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
   git: https://github.com/PawseySC/Optimising-Serial-Code
+- title: Webinar Series on Containers, June 2020
+  description:
+  pageName: containers.md
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-abfDjX1gugQh60AJRIpDrVz
+- title: Using Containers with OpenFOAM (workshop series), May 2020
+  description:
+  pageName: containers.md
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aZS9kbcuKpRtLswApf49Z4D
+- title: Using Containers in Bioinformatics (workshop series), July 2020
+  description:
+  pageName: containers.md
+  vid: https://www.youtube.com/playlist?list=PLmu61dgAX-aYkz4rAl-nqmUfq_u9YUoFn
 - title: Containers @SC19
   description: Learn what are containers and how they are beneficial to HPC & Cloud computing.
   pageName: containers.md
@@ -82,6 +94,11 @@ tableData:
   description: Pawsey workshop on containers for bioinformatics.
   pageName: containers.md
   git: https://github.com/PawseySC/bio-workshop-18
+- title: Overview of Containers in HPC
+  description: Pawsey Webinar on containers for HPC.
+  pageName: containers.md
+  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Overview%20of%20Containers%20in%20HPC.pdf?api=v2
+  git: https://github.com/PawseySC/Overview-of-Containers-in-HPC
 - title: Cosmic Machines
   description: Introductory workshop for Machine Learning in observational astronomy.
   pageName: webinars.md
@@ -95,11 +112,6 @@ tableData:
   pageName: webinars.md
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Data%20Intensive%20Workflows%20in%20HPC.pdf?api=v2
   git: https://github.com/PawseySC/data-intensive-workflows
-- title: Overview of Containers in HPC
-  description: Pawsey Webinar on containers for HPC.
-  pageName: webinars.md
-  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Overview%20of%20Containers%20in%20HPC.pdf?api=v2
-  git: https://github.com/PawseySC/Overview-of-Containers-in-HPC
 
 
 
