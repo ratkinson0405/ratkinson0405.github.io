@@ -64,7 +64,7 @@ tableData:
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Optimising%20Serial%20Code.pdf?api=v2
   git: https://github.com/PawseySC/Optimising-Serial-Code
 - title: Webinar Series on Containers, June 2020
-  description: Software portability, data reproducibility, and improved collaboration. Sounds great, right? But many researchers find themselves asking: are containers a right fit for the work I do? How can I best use them in a high performance computing context? This webinar series answers key questions about containers.
+  description: Software portability, data reproducibility, and improved collaboration. This webinar series answers key questions about containers.
   pageName: containers.md
   vid: https://www.youtube.com/playlist?list=PLmu61dgAX-abfDjX1gugQh60AJRIpDrVz
 - title: Using Containers with OpenFOAM (workshop series), May 2020
