@@ -15,9 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-          $("#myInput").on("keyup", function() {
+          $("#searchField").on("keyup", function() {
             var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function() {
+            $("#pageTable tr").filter(function() {
               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
           });
@@ -38,7 +38,7 @@
     </section>
     <section class="main-content">
       <div>
-        <input id="myInput" type="text" placeholder="Search..">
+        <input id="searchField" type="text" placeholder="Search..">
         <br><br>
         <table>
           <colgroup>
@@ -59,15 +59,15 @@
             <th>Description</th>
           </tr>
           </thead>
-          <tbody id="myTable">
+          <tbody id="pageTable">
             {% for data in site.data.links.tableData %}
               {% if data.pageName == page.name %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
-                  <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home" style="font-size:24px;"></i></a>{% endif %}</td>
-                  <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint" style="font-size:24px;"></i></a>{% endif %}</td>
-                  <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video" style="font-size:24px;"></i></a>{% endif %}</td>
-                  <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github" style="font-size:24px;"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
+                  <td markdown="span" align="center">{% if data.git != nil %}<a href="{{ data.git }}"><i class="fab fa-github"></i></a>{% endif %}</td>
                   <td markdown="span">{% if data.description != nil %}{{ data.description }}{% endif %}</td>
                 </tr>    
               {% endif %}
