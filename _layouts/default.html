@@ -12,6 +12,17 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+          });
+        });
+    </script>
   </head>
   <body>
     <section class="page-header">
@@ -27,6 +38,8 @@
     </section>
     <section class="main-content">
       <div>
+        <input id="myInput" type="text" placeholder="Search..">
+        <br><br>
         <table>
           <colgroup>
             <col width="20%" />
@@ -46,7 +59,7 @@
             <th>Description</th>
           </tr>
           </thead>
-          <tbody>
+          <tbody id="myTable">
             {% for data in site.data.links.tableData %}
               {% if data.pageName == page.name %}
                 <tr>
