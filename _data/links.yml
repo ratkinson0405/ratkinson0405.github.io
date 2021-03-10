@@ -33,9 +33,17 @@ tableData:
 - title: Introducing Remote Visualisation
   description: Introduction to remote visualisation facilities at Pawsey.
   pageName: training.md
-  url: https://vis.pawsey.org.au
-  ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introducing%20Remote%20Visualistion.pdf?api=v2
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/intro-to-remotevis
   vid: https://www.youtube.com/watch?v=aZgyjpsglSU&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=4
+- title: Visualising Data with ParaView Part 1
+  description: Visualisation using ParaView.
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/paraview-part1/#/
+- title: Visualising Data with ParaView Part 2
+  description: Visualisation using ParaView.
+  url: https://vis.pawsey.org.au/training
+  ppt: https://vis.pawsey.org.au/training/paraview-part2/#/
 - title: Develop with MPI
   description: Introduction to programming with MPI.
   pageName: code.md
