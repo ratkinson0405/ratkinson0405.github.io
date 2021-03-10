@@ -38,10 +38,12 @@ tableData:
   vid: https://www.youtube.com/watch?v=aZgyjpsglSU&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=4
 - title: Visualising Data with ParaView Part 1
   description: Visualisation using ParaView.
+  pageName: training.md
   url: https://vis.pawsey.org.au/training
   ppt: https://vis.pawsey.org.au/training/paraview-part1/#/
 - title: Visualising Data with ParaView Part 2
   description: Visualisation using ParaView.
+  pageName: training.md
   url: https://vis.pawsey.org.au/training
   ppt: https://vis.pawsey.org.au/training/paraview-part2/#/
 - title: Develop with MPI
