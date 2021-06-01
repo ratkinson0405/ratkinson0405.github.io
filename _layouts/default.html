@@ -82,12 +82,12 @@
         <span class="site-footer-credits"></span>
         <div class="external-links">
           {% for externalLink in site.data.externalLinks.links %}
-            <a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
+            <b><a href="{{ externalLink.url }}" style="padding: 10px;">{{ externalLink.title }}</a>
           {% endfor %}
         </div>
         <div class="external-links-icons">
           {% for externalLinkIcon in site.data.externalLinks.linkIcons %}
-            <b><a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer" style="padding: 20px;"><img src="{{ externalLinkIcon.image }}" alt=""></a></b>
+            <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer" style="padding: 20px;"><img src="{{ externalLinkIcon.image }}" alt=""></a>
           {% endfor %}
         </div>
         <p style="text-align: center">Copyright &copy; The Pawsey Supercomputing Centre <script>document.write(new Date().getFullYear())</script></p>
