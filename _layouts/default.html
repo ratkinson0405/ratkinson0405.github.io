@@ -87,7 +87,7 @@
         </div>
         <div class="external-links-icons">
           {% for externalLinkIcon in site.data.externalLinks.linkIcons %}
-            <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer" style="padding: 20px;"><img src="{{ externalLinkIcon.image }}" alt=""></a>
+            <b><a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer" style="padding: 20px;"><img src="{{ externalLinkIcon.image }}" alt=""></a></b>
           {% endfor %}
         </div>
         <p style="text-align: center">Copyright &copy; The Pawsey Supercomputing Centre <script>document.write(new Date().getFullYear())</script></p>
