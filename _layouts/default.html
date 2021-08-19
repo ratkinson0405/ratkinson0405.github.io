@@ -44,8 +44,8 @@
         function filterResults() {
           $("#pageTable tr").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && 
-                           $(this).text().toLowerCase().indexOf(beginner) > -1)
-                           //$(this).text().toLowerCase().indexOf(intermediate) > -1 &&
+                           $(this).text().toLowerCase().indexOf(beginner) > -1 &&
+                           $(this).text().toLowerCase().indexOf(intermediate) > -1)// &&
                            //$(this).text().toLowerCase().indexOf(advanced) > -1)
           });
         };
