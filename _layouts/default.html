@@ -43,12 +43,12 @@
         
         function filterResults() {
           $("#pageTable tr").filter(function() {
-//            if ($(this).text().toLowerCase().indexOf(searchValue) > -1 || $(this).text().toLowerCase().indexOf(beginner) > -1) {
-//              $(this).toggle(new Boolean(true))
-//            } else {
+            if ($(this).text().toLowerCase().indexOf(searchValue) > -1 || $(this).text().toLowerCase().indexOf(beginner) > -1) {
+              $(this).toggle()
+            } //else {
 //              $(this).toggle(new Boolean(false)) 
 //            }
-            $(this).toggle(($(this).text().toLowerCase().indexOf(searchValue) > -1) || ($(this).text().toLowerCase().indexOf(beginner) > -1));
+//            $(this).toggle(($(this).text().toLowerCase().indexOf(searchValue) > -1) || ($(this).text().toLowerCase().indexOf(beginner) > -1));
           });
         };
       });
