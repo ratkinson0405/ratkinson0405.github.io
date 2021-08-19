@@ -27,8 +27,8 @@
         });
         
         $('#beginner').click(function() {
-//          beginner = $(this).is(':checked') ? 'beginner' : '';
-//          filterResults();
+          beginner = $(this).is(':checked') ? 'beginner' : '';
+          filterResults();
         });
 
         $('#intermediate').click(function() {
@@ -48,7 +48,7 @@
 //            } else {
 //              $(this).toggle(new Boolean(false)) 
 //            }
-            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
+            $(this).toggle(($(this).text().toLowerCase().indexOf(searchValue) > -1) || ($(this).text().toLowerCase().indexOf(beginner) > -1));
           });
         };
       });
