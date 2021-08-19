@@ -27,7 +27,7 @@
         });
         
         $('#beginner').click(function() {
-          beginner = ((this.checked) ? 'beginner' : '');
+          beginner = $(this).checked ? 'beginner' : '';
           filterResults();
         });
 
