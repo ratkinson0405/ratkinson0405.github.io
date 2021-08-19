@@ -22,7 +22,7 @@
           //var value = $(this).val().toLowerCase();
           searchValue = $(this).val().toLowerCase();
           $("#pageTable tr").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 || $(this).text().toLowerCase().indexOf(beginner) > -1)
+            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && $(this).text().toLowerCase().indexOf(beginner) > -1)
           });
         });
         
@@ -30,7 +30,7 @@
           //var value = ((this.checked) ? 'beginner' : '');
           beginner = ((this.checked) ? 'beginner' : '');
           $("#pageTable tr").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 || $(this).text().toLowerCase().indexOf(beginner) > -1)
+            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && $(this).text().toLowerCase().indexOf(beginner) > -1)
           });
         });
       });
