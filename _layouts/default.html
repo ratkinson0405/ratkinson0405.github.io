@@ -19,7 +19,6 @@
         searchValue = ""
         beginner = ""
         $("#searchInput").on("keyup", function() {
-          //var value = $(this).val().toLowerCase();
           searchValue = $(this).val().toLowerCase();
           $("#pageTable tr").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && $(this).text().toLowerCase().indexOf(beginner) > -1)
@@ -27,7 +26,6 @@
         });
         
         $('#beginner').click(function() {
-          //var value = ((this.checked) ? 'beginner' : '');
           beginner = ((this.checked) ? 'beginner' : '');
           $("#pageTable tr").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && $(this).text().toLowerCase().indexOf(beginner) > -1)
