@@ -43,7 +43,8 @@
         
         function filterResults() {
           $("#pageTable tr").filter(function() {
-            if ($(this).text().toLowerCase().indexOf(searchValue) > -1) {
+            text = $(this).text().toLowerCase();
+            if (text.indexOf(searchValue) > -1 || text.indexOf(beginner) > -1) {
               $(this).toggle(true);
             }
             else {
