@@ -16,21 +16,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        searchValue = ""
-        beginner = ""
+        searchValue, beginner, intermediate, advanced = ""
+
         $("#searchInput").on("keyup", function() {
           searchValue = $(this).val().toLowerCase();
-          $("#pageTable tr").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && $(this).text().toLowerCase().indexOf(beginner) > -1)
-          });
+          filterResults();
         });
         
         $('#beginner').click(function() {
           beginner = ((this.checked) ? 'beginner' : '');
-          $("#pageTable tr").filter(function() {
-            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && $(this).text().toLowerCase().indexOf(beginner) > -1)
-          });
+          filterResults();
         });
+
+        $('#intermediate').click(function() {
+          beginner = ((this.checked) ? 'intermediate' : '');
+          filterResults();
+        });
+
+        $('#advanced').click(function() {
+          beginner = ((this.checked) ? 'advanced' : '');
+          filterResults();
+        });
+        
+        function filterResults() {
+          $("#pageTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1 && 
+                           $(this).text().toLowerCase().indexOf(beginner) > -1 &&
+                           $(this).text().toLowerCase().indexOf(intermediate) > -1 &&
+                           $(this).text().toLowerCase().indexOf(advanced) > -1)
+          });
+        };
       });
     </script>
   </head>
