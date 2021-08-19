@@ -43,12 +43,8 @@
         
         function filterResults() {
           $("#pageTable tr").filter(function() {
-            if ($(this).text().toLowerCase().indexOf(searchValue) > -1 || $(this).text().toLowerCase().indexOf(beginner) > -1) {
-              $(this).show()
-            } else {
-              $(this).hide()
-            }
-//            $(this).toggle(($(this).text().toLowerCase().indexOf(searchValue) > -1) && ($(this).text().toLowerCase().indexOf(beginner) > -1));
+            alert(searchValue + " " + beginner);
+            $(this).toggle($(this).text().toLowerCase().indexOf(searchValue) > -1);
           });
         };
       });
