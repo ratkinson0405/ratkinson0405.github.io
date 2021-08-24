@@ -45,8 +45,9 @@
           $("#pageTable tr").filter(function() {
             text = $(this).text().toLowerCase();
 
+            alert("here...");
             if ($('#beginner').checked) {
-              alert("Yes!")
+              alert("Yes!");
             }
             
             if (text.indexOf(searchValue) > -1) {
