@@ -53,17 +53,10 @@
 //            }
             
             if ($('#beginner').is(':checked')) {
-              toggle = false;
-              
-              if (text.indexOf('beginner') > -1) {
-                toggle = true;
-              }
-              else {
-                toggle = false;
-              }
-              
-              $(this).toggle(toggle);
+              $(this).toggle((text.indexOf('beginner') > -1) ? true : false);
             }
+            else {
+              $(this).toggle(false);
           });
         };
       });
