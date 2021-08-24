@@ -27,7 +27,6 @@
         });
         
         $('#beginner').click(function() {
-          beginner = $(this).is(':checked') ? 'beginner' : '';
           filterResults();
         });
 
@@ -49,9 +48,9 @@
               if (text.indexOf('beginner') > -1) {
                 $(this).toggle(true);
               }
-            }
-            else {
-              $(this).toggle(false);
+              else {
+                $(this).toggle(false);
+              }
             }
           });
         };
