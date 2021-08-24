@@ -44,25 +44,18 @@
           $("#pageTable tr").filter(function() {
             text = $(this).text().toLowerCase();
 
-            $(this).toggle(false);
-            if (text.indexOf(searchValue) > -1) {
-              $(this).toggle(true);
-            }
-            else {
-              $(this).toggle(false);
-            }
+//            $(this).toggle(false);
+//            if (text.indexOf(searchValue) > -1) {
+//              $(this).toggle(true);
+//            }
+//            else {
+//              $(this).toggle(false);
+//            }
             
             if ($('#beginner').is(':checked')) {
               toggle = false;
               
               if (text.indexOf('beginner') > -1) {
-                toggle = true;
-              }
-              else {
-                toggle = false;
-              }
-              
-              if (text.indexOf(searchValue) > -1) {
                 toggle = true;
               }
               else {
