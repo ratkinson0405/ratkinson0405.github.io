@@ -46,18 +46,8 @@
             text = $(this).text().toLowerCase();
 
             if ($('#beginner').is(':checked')) {
-              alert("Yes!");
-            }
-            
-            if (text.indexOf(searchValue) > -1) {
-              $(this).toggle(true);
-            }
-            else if (searchValue == "") {
-              if (text.indexOf(beginner) > -1) {
+              if (text.indexOf('beginner') > -1) {
                 $(this).toggle(true);
-              }
-              else {
-                $(this).toggle(false);
               }
             }
             else {
