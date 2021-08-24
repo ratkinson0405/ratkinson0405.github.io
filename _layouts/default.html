@@ -53,7 +53,13 @@
 //            }
             
             if ($('#beginner').is(':checked')) {
-              $(this).toggle(text.indexOf('beginner') > -1 ? true : false);
+              if (text.indexOf('beginner') > -1) {
+                $(this).toggle(true);
+              }
+              else {
+                $(this).toggle(false);
+              }
+//              $(this).toggle(text.indexOf('beginner') > -1 ? true : false);
             }
             else {
               $(this).toggle(false);
