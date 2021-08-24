@@ -44,6 +44,11 @@
         function filterResults() {
           $("#pageTable tr").filter(function() {
             text = $(this).text().toLowerCase();
+
+            if (text.indexOf(beginner) > -1) {
+              $(this).toggle(true);
+            }
+            
             if (text.indexOf(searchValue) > -1) {
               $(this).toggle(true);
             }
