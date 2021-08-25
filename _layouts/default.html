@@ -55,8 +55,19 @@
               else {
                 $(this).toggle(false);
               }
-//              $(this).toggle(text.indexOf('beginner') > -1 ? true : false);
             }
+
+            if ($('#intermediate').is(':checked')) {
+              if (text.indexOf('intermediate') > -1 && searchValue == "") {
+                $(this).toggle(true);
+              }
+              else if (text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) {
+                $(this).toggle(true);
+              }
+              else {
+                $(this).toggle(false);
+              }
+            }            
           });
         };
       });
