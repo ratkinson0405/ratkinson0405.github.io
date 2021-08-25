@@ -39,9 +39,23 @@
           $("#pageTable tr").filter(function() {
             text = $(this).text().toLowerCase();
 
-            $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
+//            $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
             
-            if ($('#beginner').is(':checked')) {
+            if (text.indexOf(searchValue) > -1) {
+              if ($('#beginner').is(':checked') || $('#intermediate').is(':checked')) {
+                if (text.indexOf('beginner') > -1 || text.indexOf('intermediate') > -1) {
+                  $(this).toggle(true);
+                }
+              }
+              else {
+                $(this).toggle(true);
+              }
+            }
+            else {
+              $(this).toggle(false);
+            }
+            
+/*            if ($('#beginner').is(':checked')) {
               if (text.indexOf('beginner') > -1 && searchValue == "") {
                 $(this).toggle(true);
               }
@@ -63,7 +77,7 @@
               else {
                 $(this).toggle(false);
               }
-            }            
+            }            */
           });
         };
       });
