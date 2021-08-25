@@ -39,7 +39,8 @@
             $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
             
             if ($('#beginner').is(':checked') || 
-                $('#intermediate').is(':checked')) 
+                $('#intermediate').is(':checked') ||
+               $('#advanced').is(':checked')) 
             {
               if (($('#beginner').is(':checked') && text.indexOf('beginner') > -1 && searchValue == "") || 
                   ($('#intermediate').is(':checked') && text.indexOf('intermediate') > -1 && searchValue == "") ||
