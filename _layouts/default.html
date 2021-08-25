@@ -38,13 +38,13 @@
             
             $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
 
-            beginner = $('#beginner').is(':checked');
-            intermediate = $('#intermediate').is(':checked');
-            advanced = $('#advanced').is(':checked');
+            isBeginner = $('#beginner').is(':checked');
+            isIntermediate = $('#intermediate').is(':checked');
+            isAdvanced = $('#advanced').is(':checked');
             
             if (isBeginner || isIntermediate || isAdvanced) 
             {
-              if ((iseginner && text.indexOf('beginner') > -1 && searchValue == "") || 
+              if ((isBeginner && text.indexOf('beginner') > -1 && searchValue == "") || 
                   (isIntermediate && text.indexOf('intermediate') > -1 && searchValue == "") ||
                   (isAdvanced && text.indexOf('advanced') > -1 && searchValue == "")) 
               {
