@@ -37,7 +37,31 @@
             searchValue = $("#searchInput").val().toLowerCase();
             
             $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
+
+            beginner = $('#beginner').is(':checked');
+            intermediate = $('#intermediate').is(':checked');
+            advanced = $('#advanced').is(':checked');
             
+            if (isBeginner || isIntermediate || isAdvanced) 
+            {
+              if ((iseginner && text.indexOf('beginner') > -1 && searchValue == "") || 
+                  (isIntermediate && text.indexOf('intermediate') > -1 && searchValue == "") ||
+                  (isAdvanced && text.indexOf('advanced') > -1 && searchValue == "")) 
+              {
+                $(this).toggle(true);
+              }
+              else if ((isBeginner && text.indexOf('beginner') > -1 && text.indexOf(searchValue) > -1) || 
+                       (isIntermediate && text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
+                       (isAdvanced && text.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1)) 
+              {
+                $(this).toggle(true);
+              }
+              else 
+              {
+                $(this).toggle(false);
+              } 
+
+/*         
             if ($('#beginner').is(':checked') || 
                 $('#intermediate').is(':checked') ||
                $('#advanced').is(':checked')) 
@@ -57,8 +81,9 @@
               else 
               {
                 $(this).toggle(false);
-              }
-            }
+              } 
+*/
+            }           
           });
         };
       });
