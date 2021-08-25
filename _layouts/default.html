@@ -51,21 +51,15 @@
               $(this).toggle(false);
             }
             
-//            alert('hello 1');
-//            if ($('#beginner').is(':checked')) {
-//              alert('hello 2');
-//              if (text.indexOf('beginner') > -1) {
-//                alert('hello 3');
-//                $(this).toggle(true);
-//              }
-//              else {
-//                $(this).toggle(false);
-//              }
+            if ($('#beginner').is(':checked')) {
+              if (text.indexOf('beginner') > -1) {
+                $(this).toggle(true);
+              }
+              else {
+                $(this).toggle(false);
+              }
 //              $(this).toggle(text.indexOf('beginner') > -1 ? true : false);
-//            }
-//            else {
-//              $(this).toggle(false);
-//            }
+            }
           });
         };
       });
