@@ -43,13 +43,7 @@
           $("#pageTable tr").filter(function() {
             text = $(this).text().toLowerCase();
 
-            $(this).toggle(false);
-            if (text.indexOf(searchValue) > -1) {
-              $(this).toggle(true);
-            }
-            else {
-              $(this).toggle(false);
-            }
+            $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
             
             if ($('#beginner').is(':checked')) {
               if (text.indexOf('beginner') > -1) {
