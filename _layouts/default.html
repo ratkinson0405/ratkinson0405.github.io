@@ -16,9 +16,6 @@
     <script>
       $(document).ready(function() {
         searchValue = "";
-        beginner = ""; 
-        intermediate = "";
-        advanced = "";
 
         $("#searchInput").on("keyup", function() {
           searchValue = $(this).val().toLowerCase();
@@ -30,8 +27,7 @@
         });
 
         $('#intermediate').click(function() {
-//          intermediate = ((this.checked) ? 'intermediate' : '');
-//          filterResults();
+          filterResults();
         });
 
         $('#advanced').click(function() {
