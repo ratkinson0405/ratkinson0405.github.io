@@ -15,10 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function() {
-        searchValue = "";
-
         $("#searchInput").on("keyup", function() {
-          searchValue = $(this).val().toLowerCase();
           filterResults();
         });
         
@@ -38,7 +35,8 @@
         function filterResults() {
           $("#pageTable tr").filter(function() {
             text = $(this).text().toLowerCase();
-
+            searchValue = $("#searchInput").val().toLowerCase();
+            
             $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
             
             if ($('#beginner').is(':checked') || $('#intermediate').is(':checked')) {
