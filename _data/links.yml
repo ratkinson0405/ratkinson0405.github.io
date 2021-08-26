@@ -8,6 +8,7 @@ tableData:
 - title: Using Supercomputers – Part 1
   description: Part 1 - Beginners training outlining the major characteristics of a supercomputer, logging in, submitting a job and other key concepts.
   pageName: training.md
+  level: Beginner
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/UsingSupercomputersPart1V01.pdf?api=v2
   vid: https://www.youtube.com/watch?v=5myCBDNn5is&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=3
 - title: Using Supercomputers – Part 2
