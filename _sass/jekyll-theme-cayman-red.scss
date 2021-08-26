@@ -407,6 +407,11 @@ i {
   
   a {
     color: #fff;
+      text-decoration: none;
+
+  &:hover {
+    color: red;
+  }
   }
 }
 
