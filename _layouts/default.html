@@ -23,7 +23,7 @@
       </div>
     </section>
     <section class="main-content">
-      <div style="float: left; width: 20%;">
+      <div class="main-content-search">
         <input id="searchInput" type="text" placeholder="Search...">
         <br><br>
         <input type="checkbox" id="beginner" name="beginner" value="Beginner">
@@ -33,7 +33,7 @@
         <input type="checkbox" id="advanced" name="advanced" value="Advanced">
         <label for="advanced"> Advanced</label><br><br>
       </div>
-      <div style="float: right; width: 80%; padding: 0px 10px 50px 0px">
+      <div style="main-content-table">
         <table>
           <colgroup>
             <col width="20%" />
@@ -71,7 +71,7 @@
       </div>
     </section>
     <section>
-      <footer class="site-footer" style="overflow: auto; width: 100%; padding-top: 20px;">
+      <footer class="site-footer">
         <span class="site-footer-credits"></span>
         <div class="external-links">
           {% for externalLink in site.data.externalLinks.links %}
