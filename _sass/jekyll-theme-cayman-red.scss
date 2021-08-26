@@ -367,10 +367,8 @@ i {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
   overflow: auto;
   width: 100%;
-  padding-top: 20px;
 
   @include large {
     font-size: 1rem;
