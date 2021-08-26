@@ -381,6 +381,13 @@ i {
   @include small {
     font-size: 0.9rem;
   }
+  
+  p {
+    tex-align: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+    margin: 0px;
+  }
 }
 
 .site-footer-owner {
@@ -394,6 +401,9 @@ i {
 
 .external-links {
   text-align: center;  
+  height: auto;
+  background-color: #383838;
+  padding: 30px;
 }
 
 .external-links-icons {
