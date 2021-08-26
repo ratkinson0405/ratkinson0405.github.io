@@ -36,15 +36,17 @@
         <table>
           <colgroup>
             <col width="20%" />
+            <col width="10%" />
             <col width="5%" />
             <col width="5%" />
             <col width="5%" />
             <col width="5%" />
-            <col width="65%" />
+            <col width="55%" />
           </colgroup>
           <thead>
           <tr class="header">
             <th>Name</th>
+            <th>Level</th>
             <th>Home</th>
             <th>Slides</th>
             <th>Video</th>
@@ -57,6 +59,7 @@
               {% if data.pageName == page.name %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
+                  <td markdown="span">{{ data.level }}</td>
                   <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
                   <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
                   <td markdown="span" align="center">{% if data.vid != nil %}<a href="{{ data.vid }}"><i class="fas fa-video"></i></a>{% endif %}</td>
