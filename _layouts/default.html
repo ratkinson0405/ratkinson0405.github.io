@@ -13,58 +13,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        $("#searchInput").on("keyup", function() {
-          filterResults();
-        });
-        
-        $('#beginner').click(function() {
-          filterResults();
-        });
-
-        $('#intermediate').click(function() {
-          filterResults();
-        });
-
-        $('#advanced').click(function() {
-          filterResults();
-        });
-        
-        function filterResults() {
-          $("#pageTable tr").filter(function() {
-            text = $(this).text().toLowerCase();
-            searchValue = $("#searchInput").val().toLowerCase();
-            
-            $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
-
-            isBeginner = $('#beginner').is(':checked');
-            isIntermediate = $('#intermediate').is(':checked');
-            isAdvanced = $('#advanced').is(':checked');
-            
-            if (isBeginner || isIntermediate || isAdvanced) 
-            {
-              if ((isBeginner && text.indexOf('beginner') > -1 && searchValue == "") || 
-                  (isIntermediate && text.indexOf('intermediate') > -1 && searchValue == "") ||
-                  (isAdvanced && text.indexOf('advanced') > -1 && searchValue == "")) 
-              {
-                $(this).toggle(true);
-              }
-              else if ((isBeginner && text.indexOf('beginner') > -1 && text.indexOf(searchValue) > -1) || 
-                       (isIntermediate && text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
-                       (isAdvanced && text.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1)) 
-              {
-                $(this).toggle(true);
-              }
-              else 
-              {
-                $(this).toggle(false);
-              } 
-            }           
-          });
-        };
-      });
-    </script>
+    <script src="assets/js/search.js"></script>
   </head>
   <body>
     <section class="page-header">
