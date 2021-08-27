@@ -19,6 +19,8 @@ $(document).ready(function() {
     $("#pageTable tr").filter(function() {
       text = $(this).text().toLowerCase();
       searchValue = $("#searchInput").val().toLowerCase();
+      
+      slides = $(this).find("td:eq(3)").text();
             
       $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
 
