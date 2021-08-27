@@ -46,6 +46,8 @@ $(document).ready(function() {
       isBeginner = $('#beginner').is(':checked');
       isIntermediate = $('#intermediate').is(':checked');
       isAdvanced = $('#advanced').is(':checked');
+      
+      test = $(this).find("td:eq(2)").html();
             
       if (isBeginner || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub) 
       {
