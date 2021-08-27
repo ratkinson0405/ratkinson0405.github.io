@@ -64,7 +64,7 @@ $(document).ready(function() {
         else if ((isBeginner && text.indexOf('beginner') > -1 && text.indexOf(searchValue) > -1) || 
                  (isIntermediate && text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
                  (isAdvanced && text.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1) ||
-                 (isHome && $(this).find("td:eq(2)").html() != "" && searchValue > -1) || 
+                 (isHome && test != "" && searchValue > -1) || 
                  (isSlide && $(this).find("td:eq(3)").html() != "" && searchValue > -1) || 
                  (isVideo && $(this).find("td:eq(4)").html() != "" && searchValue > -1) || 
                  (isGitHub && $(this).find("td:eq(5)").html() != "" && searchValue > -1))
