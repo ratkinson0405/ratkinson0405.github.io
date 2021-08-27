@@ -2,7 +2,23 @@ $(document).ready(function() {
   $("#searchInput").on("keyup", function() {
     filterResults();
   });
-        
+       
+  $('#home').click(function() {
+    filterResults();
+  });
+
+  $('#slides').click(function() {
+    filterResults();
+  });
+
+  $('#video').click(function() {
+    filterResults();
+  });
+
+  $('#github').click(function() {
+    filterResults();
+  });
+  
   $('#beginner').click(function() {
     filterResults();
   });
