@@ -20,7 +20,7 @@ $(document).ready(function() {
       text = $(this).text().toLowerCase();
       searchValue = $("#searchInput").val().toLowerCase();
       
-      slides = $(this).find("td:eq(3)").text();
+      slides = $(this).find("td:eq(3)").innerHTML;
             
       $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
 
