@@ -47,19 +47,19 @@ $(document).ready(function() {
       isIntermediate = $('#intermediate').is(':checked');
       isAdvanced = $('#advanced').is(':checked');
             
-      if (isBeginner || isIntermediate || isAdvanced || ishome || isSlide || isVideo || isGitHub) 
+      if (isBeginner || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub) 
       {
         if ((isBeginner && text.indexOf('beginner') > -1 && searchValue == "") || 
             (isIntermediate && text.indexOf('intermediate') > -1 && searchValue == "") ||
             (isAdvanced && text.indexOf('advanced') > -1 && searchValue == "") ||
-            (isHome && searchValue == "") || (isSlide && searchValue == "") || (isVideo && searchValue == "") || (iGitHub && searchValue == ""))
+            (isHome && searchValue == "") || (isSlide && searchValue == "") || (isVideo && searchValue == "") || (isGitHub && searchValue == ""))
         {
           $(this).toggle(true);
         }
         else if ((isBeginner && text.indexOf('beginner') > -1 && text.indexOf(searchValue) > -1) || 
                  (isIntermediate && text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
                  (isAdvanced && text.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1) ||
-                 (isHome && searchValue > -1) || (isSlide && searchValue > -1) || (isVideo && searchValue > -1) || (iGitHub && searchValue > -1))
+                 (isHome && searchValue > -1) || (isSlide && searchValue > -1) || (isVideo && searchValue > -1) || (isGitHub && searchValue > -1))
         {
           $(this).toggle(true);
         }
