@@ -39,7 +39,7 @@ $(document).ready(function() {
       $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
 
       isHome = $('#home').is(':checked');
-      isSlide = $('#slide').is(':checked');
+      isSlide = $('#slides').is(':checked');
       isVideo = $('#video').is(':checked');
       isGitHub = $('#github').is(':checked');
 
