@@ -20,10 +20,10 @@ $(document).ready(function() {
       text = $(this).text().toLowerCase();
       searchValue = $("#searchInput").val().toLowerCase();
       
-      isHome = $(this).find("td:eq(2)").html() != null ? true : false;
-      isSlide = $(this).find("td:eq(3)").html() != null ? true : false;
-      isVideo = $(this).find("td:eq(4)").html() != null ? true : false;
-      isGithub = $(this).find("td:eq(5)").html() != null ? true : false;
+      isHome = $(this).find("td:eq(2)").html() != "" ? true : false;
+      isSlide = $(this).find("td:eq(3)").html() != "" ? true : false;
+      isVideo = $(this).find("td:eq(4)").html() != "" ? true : false;
+      isGithub = $(this).find("td:eq(5)").html() != "" ? true : false;
             
       $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
 
