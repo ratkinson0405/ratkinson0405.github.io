@@ -36,12 +36,12 @@ $(document).ready(function() {
       text = $(this).text().toLowerCase();
       searchValue = $("#searchInput").val().toLowerCase();
       
-      isHome = $(this).find("td:eq(2)").html() != "" ? true : false;
-      isSlide = $(this).find("td:eq(3)").html() != "" ? true : false;
-      isVideo = $(this).find("td:eq(4)").html() != "" ? true : false;
-      isGitHub = $(this).find("td:eq(5)").html() != "" ? true : false;
-            
       $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
+
+      isHome = $('#home').is(':checked');
+      isSlide = $('#slide').is(':checked');
+      isVideo = $('#video').is(':checked');
+      isGitHub = $('#github').is(':checked');
 
       isBeginner = $('#beginner').is(':checked');
       isIntermediate = $('#intermediate').is(':checked');
@@ -52,14 +52,20 @@ $(document).ready(function() {
         if ((isBeginner && text.indexOf('beginner') > -1 && searchValue == "") || 
             (isIntermediate && text.indexOf('intermediate') > -1 && searchValue == "") ||
             (isAdvanced && text.indexOf('advanced') > -1 && searchValue == "") ||
-            (isHome && searchValue == "") || (isSlide && searchValue == "") || (isVideo && searchValue == "") || (isGitHub && searchValue == ""))
+            (isHome && $(this).find("td:eq(2)").html() != "" && searchValue == "") || 
+            (isSlide && $(this).find("td:eq(3)").html() != "" && searchValue == "") || 
+            (isVideo && $(this).find("td:eq(4)").html() != "" && searchValue == "") || 
+            (isGitHub && $(this).find("td:eq(5)").html() != "" && searchValue == ""))
         {
           $(this).toggle(true);
         }
         else if ((isBeginner && text.indexOf('beginner') > -1 && text.indexOf(searchValue) > -1) || 
                  (isIntermediate && text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
                  (isAdvanced && text.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1) ||
-                 (isHome && searchValue > -1) || (isSlide && searchValue > -1) || (isVideo && searchValue > -1) || (isGitHub && searchValue > -1))
+                 (isHome && $(this).find("td:eq(2)").html() != "" && searchValue > -1) || 
+                 (isSlide && $(this).find("td:eq(3)").html() != "" && searchValue > -1) || 
+                 (isVideo && $(this).find("td:eq(4)").html() != "" && searchValue > -1) || 
+                 (isGitHub && $(this).find("td:eq(5)").html() != "" && searchValue > -1))
         {
           $(this).toggle(true);
         }
