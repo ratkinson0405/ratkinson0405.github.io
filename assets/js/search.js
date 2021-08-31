@@ -49,7 +49,7 @@ $(document).ready(function() {
       
       if (isCore || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub) 
       {
-        if ((isCore && text.indexOf('beginner') > -1 && searchValue == "") || 
+        if ((isCore && text.indexOf('core') > -1 && searchValue == "") || 
             (isIntermediate && text.indexOf('intermediate') > -1 && searchValue == "") ||
             (isAdvanced && text.indexOf('advanced') > -1 && searchValue == "") ||
             (isHome && $(this).find("td:eq(2)").html() != "" && searchValue == "") || 
@@ -59,7 +59,7 @@ $(document).ready(function() {
         {
           $(this).toggle(true);
         }
-        else if ((isCore && text.indexOf('beginner') > -1 && text.indexOf(searchValue) > -1) || 
+        else if ((isCore && text.indexOf('core') > -1 && text.indexOf(searchValue) > -1) || 
                  (isIntermediate && text.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
                  (isAdvanced && text.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1) ||
                  (isHome && $(this).find("td:eq(2)").html() != "" && text.indexOf(searchValue) > -1) || 
