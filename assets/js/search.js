@@ -55,7 +55,7 @@ $(document).ready(function() {
       
       if (isCore || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub || isSupercomputing) 
       {
-        tag = $(this).find("td:eq(1)").html().lower();        
+        tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if ((isCore && tag.indexOf('core') > -1 && searchValue == "") || 
             (isIntermediate && tag.indexOf('intermediate') > -1 && searchValue == "") ||
             (isAdvanced && tag.indexOf('advanced') > -1 && searchValue == "") ||
