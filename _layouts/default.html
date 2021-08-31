@@ -75,7 +75,7 @@
           <tbody id="pageTable">
             {% for data in site.data.links.tableData %}
               {% if data.pageName == page.name %}
-                <tr>
+                <tr style="font-size: small;">
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span" style="font-size: small;">{% if data.level != nil %}{{ data.level }}{% endif %}</td>
                   <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
