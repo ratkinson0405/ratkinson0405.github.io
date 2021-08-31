@@ -328,8 +328,13 @@ i {
       padding: 0.5rem 1rem;
       border: 1px solid $table-border-color;
     }
+    
     td > a {
       color:  #ed8f7b;  
+    }
+    
+    tr {
+      font-size: small;
     }
   }
 
