@@ -119,6 +119,10 @@ i {
   @include small {
     padding: 1rem 1rem 0rem;
   }
+  
+  img {
+    width: 200;
+  }
 }
 
 .project-name {
