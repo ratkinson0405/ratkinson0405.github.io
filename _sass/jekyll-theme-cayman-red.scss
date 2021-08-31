@@ -363,6 +363,15 @@ i {
   width: 15%; 
 }
 
+search-label {
+  padding-top: 20px; 
+  padding-bottom: 5px ;
+  
+  label {
+    font-weight: bold;
+  }
+}
+
 .main-content-table {
   float: right; width: 85%;
   padding: 0px 10px 50px 0px;
