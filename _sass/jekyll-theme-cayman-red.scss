@@ -374,7 +374,9 @@ i {
 }
 
 .search-criteria {
-  padding-left: 7px;
+  label {
+    padding-left: 7px;
+  }
 }
 
 .main-content-table {
