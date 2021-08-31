@@ -99,22 +99,22 @@
         </table>
       </div>
     </section>
-    <section>
-      <footer class="site-footer">
-        <div class="external-links">
-          {% for externalLink in site.data.externalLinks.links %}
-            <a href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
-          {% endfor %}
-        </div>
-        <div class="external-links-icons">
-          {% for externalLinkIcon in site.data.externalLinks.linkIcons %}
-            <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ externalLinkIcon.image }}" alt=""></a>
-          {% endfor %}
-        </div>
-        <p>Copyright &copy; The Pawsey Supercomputing Centre <script>document.write(new Date().getFullYear())</script></p>
-      </footer>
-    </section>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
+  <section>
+    <footer class="site-footer">
+      <div class="external-links">
+        {% for externalLink in site.data.externalLinks.links %}
+          <a href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
+        {% endfor %}
+      </div>
+      <div class="external-links-icons">
+        {% for externalLinkIcon in site.data.externalLinks.linkIcons %}
+          <a href="{{ externalLinkIcon.href }}" target="_blank" rel="noopener noreferrer"><img src="{{ externalLinkIcon.image }}" alt=""></a>
+        {% endfor %}
+      </div>
+      <p>Copyright &copy; The Pawsey Supercomputing Centre <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
+  </section>
 </html>
