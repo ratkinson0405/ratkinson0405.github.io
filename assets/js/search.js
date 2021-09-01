@@ -56,25 +56,27 @@ $(document).ready(function() {
       if (isCore || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub || isSupercomputing) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
-        if ((isCore && tag.indexOf('core') > -1 && searchValue == "") || 
-            (isIntermediate && tag.indexOf('intermediate') > -1 && searchValue == "") ||
-            (isAdvanced && tag.indexOf('advanced') > -1 && searchValue == "") ||
-            (isSupercomputing && tag.indexOf('supercomputing') > -1 && searchValue == "") ||
-            (isHome && $(this).find("td:eq(2)").html() != "" && searchValue == "") || 
-            (isSlide && $(this).find("td:eq(3)").html() != "" && searchValue == "") || 
-            (isVideo && $(this).find("td:eq(4)").html() != "" && searchValue == "") || 
-            (isGitHub && $(this).find("td:eq(5)").html() != "" && searchValue == ""))
+        if (searchValue == "" &&
+            (isCore && tag.indexOf('core') > -1) || 
+            (isIntermediate && tag.indexOf('intermediate') > -1) ||
+            (isAdvanced && tag.indexOf('advanced') > -1) ||
+            (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
+            (isHome && $(this).find("td:eq(2)").html() != "") || 
+            (isSlide && $(this).find("td:eq(3)").html() != "") || 
+            (isVideo && $(this).find("td:eq(4)").html() != "") || 
+            (isGitHub && $(this).find("td:eq(5)").html() != ""))
         {
           $(this).toggle(true);
         }
-        else if ((isCore && tag.indexOf('core') > -1 && text.indexOf(searchValue) > -1) || 
-                 (isIntermediate && tag.indexOf('intermediate') > -1 && text.indexOf(searchValue) > -1) ||
-                 (isAdvanced && tag.indexOf('advanced') > -1 && text.indexOf(searchValue) > -1) ||
-                 (isSupercomputing && tag.indexOf('supercomputing') > -1 && text.indexOf(searchValue) > -1) ||
-                 (isHome && $(this).find("td:eq(2)").html() != "" && text.indexOf(searchValue) > -1) || 
-                 (isSlide && $(this).find("td:eq(3)").html() != "" && text.indexOf(searchValue) > -1) || 
-                 (isVideo && $(this).find("td:eq(4)").html() != "" && text.indexOf(searchValue) > -1) || 
-                 (isGitHub && $(this).find("td:eq(5)").html() != "" && text.indexOf(searchValue) > -1))
+        else if (text.indexOf(searchValue) > -1 &&
+                 (isCore && tag.indexOf('core') > -1) || 
+                 (isIntermediate && tag.indexOf('intermediate') > -1) ||
+                 (isAdvanced && tag.indexOf('advanced') > -1) ||
+                 (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
+                 (isHome && $(this).find("td:eq(2)").html() != "") || 
+                 (isSlide && $(this).find("td:eq(3)").html() != "") || 
+                 (isVideo && $(this).find("td:eq(4)").html() != "") || 
+                 (isGitHub && $(this).find("td:eq(5)").html() != ""))
         {
           $(this).toggle(true);
         }
