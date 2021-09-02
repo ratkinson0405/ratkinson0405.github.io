@@ -16,11 +16,11 @@
     <script src="assets/js/search.js"></script>
   </head>
   <body>
-    <section class="page-header">
+    <div class="page-header">
       <a class="site-title" href="http://pawsey.org.au"><img src="{{ '/' | absolute_url }}assets/img/logo.png"></a>
       <h2 class="project-tagline">Course & Training Material</h2>
-    </section>
-    <section class="main-content">
+    </div>
+    <div class="main-content">
       <div class="main-content-search">
         <div>
           <input id="searchInput" type="text" placeholder="Search...">
@@ -98,8 +98,8 @@
           </tbody>
         </table>
       </div>
-    </section>
-    <section>
+    </div>
+    <div>
       <footer class="site-footer">
         <div class="external-links">
           {% for externalLink in site.data.externalLinks.links %}
@@ -113,7 +113,7 @@
         </div>
         <p>Copyright &copy; The Pawsey Supercomputing Centre <script>document.write(new Date().getFullYear())</script></p>
       </footer>
-    </section>
+    </div>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
