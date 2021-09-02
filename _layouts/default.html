@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/search.js"></script>
   </head>
-  <body>
+  <body style="min-height: 100vh; display: flex; flex-direction: column;">
     <div class="page-header">
       <a class="site-title" href="http://pawsey.org.au"><img src="{{ '/' | absolute_url }}assets/img/logo.png"></a>
       <h2 class="project-tagline">Course & Training Material</h2>
@@ -100,7 +100,7 @@
       </div>
     </div>
     <div>
-      <footer class="site-footer">
+      <footer class="site-footer" style="margin-top: auto;">
         <div class="external-links">
           {% for externalLink in site.data.externalLinks.links %}
             <a href="{{ externalLink.url }}" target="_blank">{{ externalLink.title }}</a>
