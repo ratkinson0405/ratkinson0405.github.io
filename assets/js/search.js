@@ -97,7 +97,7 @@ window.onload = function sortTableByName() {
 
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
+  table = document.getElementById("trainingTable");
   switching = true;
   /*Make a loop that will continue until
   no switching has been done:*/
