@@ -93,9 +93,9 @@
               {% if data.pageName == page.name %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
-                  <td markdown="span">{% if data.level != nil %}<b>Level:</b> {{ data.level }}<br>{% endif %}
-                                      {% if data.category != nil %}<b>Category:</b> {{ data.category }}<br>{% endif %}
-                                      {% if data.provider != nil %}<b>Category:</b> {{ data.provider }}<br>{% endif %}
+                  <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
+                                      {% if data.category != nil %}<div><b>Category:</b> {{ data.category }}<br></div>{% endif %}
+                                      {% if data.provider != nil %}<div><b>Category:</b> {{ data.provider }}<br></div>{% endif %}
                   </td>
                   <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
                   <td markdown="span" align="center">{% if data.ppt != nil %}<a href="{{ data.ppt }}"><i class="fas fa-file-powerpoint"></i></a>{% endif %}</td>
