@@ -91,7 +91,9 @@ $(document).ready(function() {
   };
 });
 
-window.onload = sortTable();
+window.onload = function test() {
+  sortTable();
+}
 
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
