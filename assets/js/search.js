@@ -34,6 +34,14 @@ $(document).ready(function() {
   $('#supercomputing').click(function() {
     filterResults();
   });
+
+  $('#pawsey').click(function() {
+    filterResults();
+  });
+
+  $('#external').click(function() {
+    filterResults();
+  });
   
   function filterResults() {
     $("#pageTable tr").filter(function() {
@@ -53,7 +61,10 @@ $(document).ready(function() {
 
       isSupercomputing = $('#supercomputing').is(':checked');
       
-      if (isCore || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub || isSupercomputing) 
+      isPawsey = $('#pawsey').is(':checked');
+      isExternal = $('#external').is(':checked');
+      
+      if (isCore || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub || isSupercomputing || isPawsey || isExternal) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if (searchValue == "" &&
@@ -61,6 +72,8 @@ $(document).ready(function() {
             (isIntermediate && tag.indexOf('intermediate') > -1) ||
             (isAdvanced && tag.indexOf('advanced') > -1) ||
             (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
+            (isPawsey && tag.indexOf('pawsey') > -1) ||
+            (isExternal && tag.indexOf('external') > -1) ||
             (isHome && $(this).find("td:eq(2)").html() != "") || 
             (isSlide && $(this).find("td:eq(3)").html() != "") || 
             (isVideo && $(this).find("td:eq(4)").html() != "") || 
@@ -73,6 +86,8 @@ $(document).ready(function() {
                  (isIntermediate && tag.indexOf('intermediate') > -1) ||
                  (isAdvanced && tag.indexOf('advanced') > -1) ||
                  (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
+                 (isPawsey && tag.indexOf('pawsey') > -1) ||
+                 (isExternal && tag.indexOf('external') > -1) ||
                  (isHome && $(this).find("td:eq(2)").html() != "") || 
                  (isSlide && $(this).find("td:eq(3)").html() != "") || 
                  (isVideo && $(this).find("td:eq(4)").html() != "") || 
