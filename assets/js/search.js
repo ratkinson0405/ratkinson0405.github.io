@@ -91,6 +91,8 @@ $(document).ready(function() {
   };
 });
 
+window.onload = sortTable();
+
 function sortTable() {
   var table, rows, switching, i, x, y, shouldSwitch;
   table = document.getElementById("myTable");
