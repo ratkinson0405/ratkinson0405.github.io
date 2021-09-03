@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  sortTable();
+  
   $("#searchInput").on("keyup", function() {
     filterResults();
   });
