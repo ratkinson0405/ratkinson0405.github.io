@@ -3,22 +3,6 @@ $(document).ready(function() {
     filterResults();
   });
        
-  $('#home').click(function() {
-    filterResults();
-  });
-
-  $('#slides').click(function() {
-    filterResults();
-  });
-
-  $('#video').click(function() {
-    filterResults();
-  });
-
-  $('#github').click(function() {
-    filterResults();
-  });
-  
   $('#core').click(function() {
     filterResults();
   });
@@ -50,11 +34,6 @@ $(document).ready(function() {
       
       $(this).toggle(text.indexOf(searchValue) > -1 ? true : false);
 
-      isHome = $('#home').is(':checked');
-      isSlide = $('#slides').is(':checked');
-      isVideo = $('#video').is(':checked');
-      isGitHub = $('#github').is(':checked');
-
       isCore = $('#core').is(':checked');
       isIntermediate = $('#intermediate').is(':checked');
       isAdvanced = $('#advanced').is(':checked');
@@ -64,7 +43,7 @@ $(document).ready(function() {
       isPawsey = $('#pawsey').is(':checked');
       isExternal = $('#external').is(':checked');
       
-      if (isCore || isIntermediate || isAdvanced || isHome || isSlide || isVideo || isGitHub || isSupercomputing || isPawsey || isExternal) 
+      if (isCore || isIntermediate || isAdvanced || isSupercomputing || isPawsey || isExternal) 
       {
         tag = $(this).find("td:eq(1)").html().toLowerCase();        
         if (searchValue == "" &&
@@ -73,11 +52,7 @@ $(document).ready(function() {
             (isAdvanced && tag.indexOf('advanced') > -1) ||
             (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
             (isPawsey && tag.indexOf('pawsey') > -1) ||
-            (isExternal && tag.indexOf('external') > -1) ||
-            (isHome && $(this).find("td:eq(2)").html() != "") || 
-            (isSlide && $(this).find("td:eq(3)").html() != "") || 
-            (isVideo && $(this).find("td:eq(4)").html() != "") || 
-            (isGitHub && $(this).find("td:eq(5)").html() != ""))
+            (isExternal && tag.indexOf('external') > -1))
         {
           $(this).toggle(true);
         }
@@ -87,11 +62,7 @@ $(document).ready(function() {
                  (isAdvanced && tag.indexOf('advanced') > -1) ||
                  (isSupercomputing && tag.indexOf('supercomputing') > -1) ||
                  (isPawsey && tag.indexOf('pawsey') > -1) ||
-                 (isExternal && tag.indexOf('external') > -1) ||
-                 (isHome && $(this).find("td:eq(2)").html() != "") || 
-                 (isSlide && $(this).find("td:eq(3)").html() != "") || 
-                 (isVideo && $(this).find("td:eq(4)").html() != "") || 
-                 (isGitHub && $(this).find("td:eq(5)").html() != ""))
+                 (isExternal && tag.indexOf('external') > -1))
         {
           $(this).toggle(true);
         }
