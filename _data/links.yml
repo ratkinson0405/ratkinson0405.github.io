@@ -3,9 +3,9 @@ tableData:
   description: Advancing science through supercomputing.
   pageName: training.md
   level: Core
-  category: Supercomputing
-  category: Data
-  category: Cloud
+  - category: Supercomputing
+    category: Data
+    category: Cloud
   provider: Pawsey
   ppt: https://support.pawsey.org.au/documentation/download/attachments/2162899/Introduction%20to%20Pawsey.pdf?api=v2
   vid: https://www.youtube.com/watch?v=j2JFCsvsH1g&list=PLmu61dgAX-aZfevU9ZmtQ13bbOeF1GY5u&index=2
