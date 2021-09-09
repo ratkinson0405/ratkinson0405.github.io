@@ -81,7 +81,11 @@
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
-                                      {% if data.category != nil %}<div><b>Category:</b> {{ data.category }}<br></div>{% endif %}
+                                      {% if data.category != nil %}<div><b>Category:</b><br>
+                                      {% for category in data.category %}
+                                        {{ data.category }}<br>
+                                      {% endfor %} 
+                                      </div>{% endif %}
                                       {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
                   </td>
                   <td markdown="span" align="center">{% if data.url != nil %}<a href="{{ data.url }}"><i class="fas fa-home"></i></a>{% endif %}</td>
