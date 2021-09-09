@@ -81,10 +81,11 @@
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
-                                      {% if data.category != nil %}<div><b>Category:</b><br>
+                                      {% if data.category != nil %}<div><b>Category:</b><br><div style="padding: 10px">
                                       {% for multicat in data.category %}
                                         {{ multicat.name }}<br>
                                       {% endfor %} 
+                                      </div>
                                       </div>{% endif %}
                                       {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
                   </td>
