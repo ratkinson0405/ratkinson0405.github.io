@@ -80,14 +80,15 @@
               {% if data.pageName == page.name %}
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
-                  <td markdown="span">{% if data.level != nil %}<div class="categories"><b>Level:</b> {{ data.level }}<br></div>{% endif %}
-                                      {% if data.category != nil %}<div><b>Category:</b><br>
-                                        <div style="padding: 5px 0px 5px 10px">
-                                        {% for multicat in data.category %}
-                                          {{ multicat.name }}<br>
-                                        {% endfor %} 
+                  <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
+                                      {% if data.category != nil %}
+                                        <div><b>Category:</b><br>
+                                          <div class="categories">
+                                          {% for multicat in data.category %}
+                                            {{ multicat.name }}<br>
+                                          {% endfor %} 
+                                          </div>
                                         </div>
-                                      </div>
                                       {% endif %}
                                       {% if data.provider != nil %}<div><b>Provider:</b> {{ data.provider }}<br></div>{% endif %}
                   </td>
