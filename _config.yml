@@ -2,7 +2,3 @@ theme: jekyll-theme-cayman
 
 plugins:
   - jekyll-redirect-from
-
-collections:
-  topics:
-    output: true
