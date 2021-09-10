@@ -81,11 +81,11 @@
                 <tr>
                   <td markdown="span">{{ data.title }}</td>
                   <td markdown="span">{% if data.level != nil %}<div><b>Level:</b> {{ data.level }}<br></div>{% endif %}
-                                      {% if data.category != nil %}
-                                        <div><b>Category:</b><br>
-                                          <div class="categories">
-                                          {% for multicat in data.category %}
-                                            {{ multicat.name }}<br>
+                                      {% if data.topic != nil %}
+                                        <div><b>Topic:</b><br>
+                                          <div class="topics">
+                                          {% for topic in data.topic %}
+                                            {{ topic.name }}<br>
                                           {% endfor %} 
                                           </div>
                                         </div>
